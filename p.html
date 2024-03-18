@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .hidden {
+            margin: 50px 200px 30px;
+            padding: 30px;
+            background-color: azure;
+            display: none;
+       }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <button id="first">First</button>
+    <button id="second">Second</button>
+    <button id="third">Third</button>
+    <div id="first1" class="hidden">
+        <h1>This is First One</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est vitae quo deleniti fuga ea iure exercitationem. Vel cumque earum sequi exercitationem deserunt inventore, corrupti quasi, odio modi hic culpa.</p>
+    </div>
+    <!-- ... other divs ... -->
+</div>
+
+<script>
+    const firstButton = document.getElementById('first');
+    firstButton.addEventListener('click', function() {
+        const firstDiv = document.getElementById('first1');
+        firstDiv.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
